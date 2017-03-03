@@ -83,7 +83,7 @@ void ControlPanel::collapse()
 {
     QPoint btnPosition = m_bt_settings->mapToParent(m_bt_settings->rect().topLeft());
 
-    m_y = -(btnPosition.y() + 5);
+    m_y = -(btnPosition.y());
     //    qDebug() << Q_FUNC_INFO << m_y << " : " << m_x;
     move(m_x, m_y);
     m_menuVisible = false;
